@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import streamlit_player as sp
 
 st.title("Hello Cristina, I'm so proud of you!")
 
@@ -15,7 +14,4 @@ st.write(df_weather)
 
 # How to display graphics
 st.line_chart(df_weather['MAX_TEMPERATURE_C'])
-
-# Embed a youtube video
-sp.st_player("https://www.youtube.com/watch?v=9sg-A-eS6Ig")
 
