@@ -11,7 +11,7 @@ supermarket = pd.read_csv(link, header = 0)
 pivot = pd.pivot_table(supermarket, index = 'Date', values = 'Total', aggfunc = np.sum)#.sort_values('Date', inplace = True)
 
 with st.sidebar: 
-    selection = st.radio(nav_list)
+    selection = st.radio('What do you want to see?', nav_list)
 
 if selection == nav_list[0]:
     st.title("Total Earnings")
