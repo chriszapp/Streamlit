@@ -4,7 +4,7 @@ import numpy as np
 
 
 import streamlit as st
-	@@ -8,6 +9,7 @@
+
 nav_list = ["Total Earnings", "Locations", "Check the Data"]
 link = "https://raw.githubusercontent.com/chriszapp/datasets/main/supermarket_sales%20-%20Sheet1.csv"
 supermarket = pd.read_csv(link, header = 0)
@@ -12,7 +12,7 @@ pivot = pd.pivot_table(supermarket, index = 'Date', values = 'Total', aggfunc = 
 
 with st.sidebar: 
     selection = st.radio(
-	@@ -16,19 +18,28 @@
+	nav_list)
 
 if selection == nav_list[0]:
     st.title("Total Earnings")
