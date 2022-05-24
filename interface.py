@@ -1,6 +1,6 @@
 # !pip install pandas
 # !pip install streamlit
-!pip install yfinance
+# !pip install yfinance
 
 import streamlit as st
 import pandas as pd
