@@ -1,6 +1,6 @@
 # !pip install pandas
 # !pip install streamlit
-# !pip install yfinance
+!pip install yfinance
 
 import streamlit as st
 import pandas as pd
@@ -27,7 +27,7 @@ if selected_stock:
     if len(multiple_choice) > 0 :
         st.line_chart(data[multiple_choice])
 
-        
+
 
 
 
