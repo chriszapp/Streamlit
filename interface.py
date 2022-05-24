@@ -8,10 +8,10 @@ name_length = len(name)
 st.write("Your name has ",name_length, "characters")
 
 # How to display data
-link = "https://raw.githubusercontent.com/murpi/wilddata/master/quests/weather2019.csv"
-df_weather = pd.read_csv(link)
-st.write(df_weather)
+link = "https://raw.githubusercontent.com/chriszapp/datasets/main/books.csv"
+books = pd.read_csv(link)
+st.write(books)
 
 # How to display graphics
-st.line_chart(df_weather['MAX_TEMPERATURE_C'])
+st.line_chart(books['ratings_count'])
 
